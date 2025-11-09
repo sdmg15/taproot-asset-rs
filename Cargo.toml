@@ -1,0 +1,12 @@
+[workspace]
+members = ["mssmt"]
+resolver = "3"
+
+[workspace.dependencies]
+rand = "^0.8"
+rand_chacha = "*"
+anyhow = "1"
+bitcoin = { version = "0.32.6", features = [ "serde", "base64" ], default-features = false }
+serde = { version = "^1.0", features = ["derive"] }
+serde_json = { version = "^1.0" }
+sha256 = "1.6.0"
